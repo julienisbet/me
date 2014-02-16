@@ -1,0 +1,34 @@
+#home {
+  background: url(/images/tahoe.jpg), no-repeat center fixed;
+  background: url(/images/tahoe.jpg), no-repeat center fixed;
+  background-size: cover;
+  min-height: 1000px;
+  position: relative; }
+
+.headline {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10%;
+  width: 80%;
+  position: absolute;
+  top: 70px; }
+  .headline h2 {
+    margin-bottom: 5px; }
+
+.main p {
+  margin: 5px; }
+
+#about {
+  background: url(/images/golden-garden-blur.jpg), no-repeat center fixed;
+  background: url(/images/golden-garden-blur.jpg), no-repeat center fixed;
+  background-size: cover;
+  min-height: 1000px;
+  position: relative; }
+  #about article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%; }

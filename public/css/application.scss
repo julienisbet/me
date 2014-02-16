@@ -1,0 +1,42 @@
+@import 'bourbon/_bourbon.scss';
+
+#home { 
+  @include background(url(/images/tahoe.jpg), no-repeat center fixed);
+  @include background-size(cover);
+  min-height: 1000px;
+  position: relative;
+}
+
+.headline { 
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10%;
+  width: 80%;
+  position: absolute;
+  top: 70px; 
+    
+    h2 {
+      margin-bottom: 5px;
+    }
+}
+
+.main p {
+  margin: 5px;
+}
+ 
+#about { 
+  @include background(url(/images/golden-garden-blur.jpg), no-repeat center fixed);
+  @include background-size(cover);
+  min-height: 1000px;
+  position: relative;
+
+  article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%; 
+}
+}

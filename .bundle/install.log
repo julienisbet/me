@@ -1,0 +1,6 @@
+# Logfile created on 2014-02-16 12:43:55 -0800 by logger.rb/44203
+I, [2014-02-16T12:43:55.909041 #86368]  INFO -- : 0:  sass (3.2.14) from /Users/jules/.rvm/gems/ruby-2.1.0/specifications/sass-3.2.14.gemspec
+I, [2014-02-16T12:43:55.909649 #86368]  INFO -- : 0:  thor (0.18.1) from /Users/jules/.rvm/gems/ruby-2.1.0/specifications/thor-0.18.1.gemspec
+I, [2014-02-16T12:43:55.910172 #86368]  INFO -- : 0:  bourbon (3.1.8) from /Users/jules/.rvm/gems/ruby-2.1.0/specifications/bourbon-3.1.8.gemspec
+I, [2014-02-16T12:43:59.232151 #86368]  INFO -- : 0:  rack (1.5.2) from /Users/jules/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-02-16T12:43:59.232876 #86368]  INFO -- : 0:  bundler (1.5.1) from /Users/jules/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
