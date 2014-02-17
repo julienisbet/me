@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('section[data-type="background"]').each(function(){
-        debugger
         var $bgobj = $(this); // assigning the object
      
         var $window = $(window)
