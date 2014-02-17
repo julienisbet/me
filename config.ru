@@ -1,14 +1,13 @@
-use Rack::Static,
-  :urls => ["/images", "/js", "/css"],
-  :root => "public"
+# Require config/environment.rb
+require ::File.expand_path('../environment',  __FILE__)
 
-run lambda { |env|
-  [
-    200,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => 'public, max-age=86400'
-    },
-    File.open('public/index.html', File::RDONLY)
-  ]
-}
+set :app_file, __FILE__
+
+configure do
+  set :views, File.join(Sinatra::Application.root, "app", "views")
+
+  enable :cross_origin
+
+end
+
+run Sinatra::Application

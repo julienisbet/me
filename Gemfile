@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem 'rack'
+gem 'sinatra'
+gem 'thin'
 gem 'sass'
 gem 'bourbon'
 gem 'shotgun'
