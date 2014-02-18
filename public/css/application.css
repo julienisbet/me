@@ -16,6 +16,10 @@
   top: 70px; }
   .headline h2 {
     margin-bottom: 5px; }
+  .headline .resume-link {
+    font-size: 14px; }
+    .headline .resume-link a {
+      text-decoration: none; }
 
 .main p {
   margin: 5px; }
