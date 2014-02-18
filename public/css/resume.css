@@ -1,0 +1,32 @@
+.resume {
+  font-family: helvetica-font-family;
+  font-size: 14px;
+  padding: 20px; }
+  .resume .main-header {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 24px;
+    font-weight: bold; }
+  .resume h2 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    border-bottom: 3px solid black; }
+  .resume .nav {
+    list-style-type: none; }
+    .resume .nav li {
+      display: inline-block;
+      padding-right: 10px; }
+  .resume .row .company {
+    font-family: "Alegreya Sans SC", sans-serif;
+    /*background-color: $myGray;*/
+    border-bottom: 2px solid black;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .resume .row .title {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: bold; }

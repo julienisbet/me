@@ -1,0 +1,33 @@
+/*
+Syntax error: Invalid CSS after "$myBlue": expected selector or at-rule, was ": #026873;"
+        on line 3 of public/css/variables.scss
+
+1: $helvetica-font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+2: $alegreya-font-family: 
+3: $myBlue: #026873;
+4: $myGray: #B0B0B0;
+
+Backtrace:
+public/css/variables.scss:3
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1147:in `expected'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:28:in `parse'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"$myBlue\": expected selector or at-rule, was \": #026873;\"\A         on line 3 of public/css/variables.scss\A \A 1: $helvetica-font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;\A 2: $alegreya-font-family: \A 3: $myBlue: #026873;\A 4: $myGray: #B0B0B0;"; }
