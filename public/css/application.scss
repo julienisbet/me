@@ -1,29 +1,35 @@
 @import 'bourbon/_bourbon.scss';
 @import 'variables.scss';
 
-#home { 
-  @include background(url(/images/tahoe.jpg), no-repeat center fixed);
-  @include background-size(cover);
-  min-height: 1000px;
-  position: relative;
+body {
+  background-color: $myBackground;
 }
-
 .headline { 
-  font-family: $alegreya-font-family;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 10%;
-  width: 80%;
+  height: 200px;
+  width: 100%;
   position: absolute;
-  top: 70px; 
-    
-    h2 {
+  top: 0;
+  background-color: $myRed;
+  text-align: left;
+  padding-left: 20px;
+    h1 {
+      font-variant: small-caps;
+      color: $myBackground;
+      font-family: $futura-font-family;
+      font-size: 36px;
       margin-bottom: 5px;
     }
 
+  #links {
+     img {
+      height: 30px;
+      width: 30px;
+     }
+  }
   .resume-link {
-    font-size: 14px;
+    font-size: 20px;
+     background-color: $myBackground;
+     padding: 5px;
     a {
      text-decoration: none;
     }
@@ -32,19 +38,4 @@
 
 .main p {
   margin: 5px;
-}
- 
-#about { 
-  @include background(url(/images/golden-garden-blur.jpg), no-repeat center fixed);
-  @include background-size(cover);
-  min-height: 1000px;
-  position: relative;
-
-  article { 
-  height: 458px; 
-  position: absolute; 
-  text-align: center; 
-  top: 150px; 
-  width: 100%; 
-}
 }

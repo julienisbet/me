@@ -1,25 +1,23 @@
 /*
-Errno::ENOENT: No such file or directory @ rb_sysopen - stylesheets
+Errno::ENOENT: No such file or directory @ rb_sysopen - public/css/sass
 
 Backtrace:
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:360:in `read'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:235:in `watch'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/plugin.rb:107:in `method_missing'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/exec.rb:463:in `watch_or_update'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/exec.rb:326:in `process_result'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/exec.rb:41:in `parse'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/lib/sass/exec.rb:21:in `parse!'
-/Users/jules/.rvm/gems/ruby-2.1.0/gems/sass-3.2.14/bin/sass:13:in `<top (required)>'
-/Users/jules/.rvm/gems/ruby-2.1.0/bin/sass:23:in `load'
-/Users/jules/.rvm/gems/ruby-2.1.0/bin/sass:23:in `<main>'
-/Users/jules/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
-/Users/jules/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jules/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/Users/jules/.rvm/gems/ruby-2.2.4/bin/sass:23:in `load'
+/Users/jules/.rvm/gems/ruby-2.2.4/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - stylesheets"; }
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - public/css/sass"; }

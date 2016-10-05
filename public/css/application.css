@@ -1,38 +1,31 @@
-#home {
-  background: url(/images/tahoe.jpg), no-repeat center fixed;
-  background: url(/images/tahoe.jpg), no-repeat center fixed;
-  background-size: cover;
-  min-height: 1000px;
-  position: relative; }
+body {
+  background-color: #2B2D42; }
 
 .headline {
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 10%;
-  width: 80%;
+  height: 200px;
+  width: 100%;
   position: absolute;
-  top: 70px; }
-  .headline h2 {
+  top: 0;
+  background-color: #C33149;
+  text-align: left;
+  padding-left: 20px; }
+  .headline h1 {
+    font-variant: small-caps;
+    color: #2B2D42;
+    font-family: "Futura", sans-serif;
+    font-size: 36px;
     margin-bottom: 5px; }
+  .headline #links img {
+    height: 30px;
+    width: 30px; }
   .headline .resume-link {
-    font-size: 14px; }
+    font-size: 20px;
+    background-color: #2B2D42;
+    padding: 5px; }
     .headline .resume-link a {
       text-decoration: none; }
 
 .main p {
   margin: 5px; }
 
-#about {
-  background: url(/images/golden-garden-blur.jpg), no-repeat center fixed;
-  background: url(/images/golden-garden-blur.jpg), no-repeat center fixed;
-  background-size: cover;
-  min-height: 1000px;
-  position: relative; }
-  #about article {
-    height: 458px;
-    position: absolute;
-    text-align: center;
-    top: 150px;
-    width: 100%; }
+/*# sourceMappingURL=application.css.map */
