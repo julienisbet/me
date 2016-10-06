@@ -3,7 +3,32 @@
 
 body {
   background-color: $myBackground;
+  font-family: $helvetica-font-family;
 }
+
+  h1 {
+    font-variant: small-caps;
+    font-family: $futura-font-family;
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-family: $futura-font-family;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .hide {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: $myRed;
+  }
+      
+
 .headline { 
   height: 200px;
   width: 100%;
@@ -13,11 +38,7 @@ body {
   text-align: left;
   padding-left: 20px;
     h1 {
-      font-variant: small-caps;
       color: $myBackground;
-      font-family: $futura-font-family;
-      font-size: 36px;
-      margin-bottom: 5px;
     }
 
   #links {
@@ -27,10 +48,36 @@ body {
      }
   }
 }
-
-.timeline {
+.about {
   position: absolute;
   top: 200px;
+  width: 100%;
+}
+.bio {
+  font-family: $futura-font-family;
+  margin-left: 20px;
+  width: 80%;
+  text-align: left;
+  color: $myBlue;
+}
+.nav {
+  padding: 20px;
+  .nav-item {
+    cursor: pointer;
+    display: inline-block;
+    font-family: $futura-font-family;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $myBlue;
+    padding: 10px;
+    letter-spacing: 0.89px;
+    background: transparent;
+    &.selected {
+      border-bottom: 3px solid $myBlue;
+    }
+  }
+}
+.timeline {
   width: 100%;
   &::before {
     content: '';
@@ -69,13 +116,9 @@ body {
     .timeline-text {
       display: block;
       
-      &.hidden {
-        visibility: hidden;
-      }
-      
-      &.slide-left{
-        animation-name: slideLeft;
-        -webkit-animation-name: slideLeft;  
+      &.slide{
+        animation-name: slideUp;
+        -webkit-animation-name: slideUp;  
 
         animation-duration: 1s; 
         -webkit-animation-duration: 1s;
@@ -91,20 +134,20 @@ body {
   }
 }
 
-@keyframes slideLeft {
+@keyframes slideUp {
   0% {
-    transform: translateX(150%);
+    transform: translateY(150%);
   }   
   100% {
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(150%);
+    -webkit-transform: translateY(150%);
   }   
   100% {
-    -webkit-transform: translateX(0%);
+    -webkit-transform: translateY(0%);
   }
 }

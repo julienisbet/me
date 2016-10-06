@@ -1,5 +1,27 @@
 body {
-  background-color: #2B2D42; }
+  background-color: #2B2D42;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+h1 {
+  font-variant: small-caps;
+  font-family: "Futura", sans-serif;
+  font-size: 36px;
+  margin-bottom: 5px; }
+
+h2 {
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px; }
+
+.hidden {
+  visibility: hidden; }
+
+.hide {
+  display: none; }
+
+a {
+  text-decoration: none;
+  color: #C33149; }
 
 .headline {
   height: 200px;
@@ -10,18 +32,39 @@ body {
   text-align: left;
   padding-left: 20px; }
   .headline h1 {
-    font-variant: small-caps;
-    color: #2B2D42;
-    font-family: "Futura", sans-serif;
-    font-size: 36px;
-    margin-bottom: 5px; }
+    color: #2B2D42; }
   .headline #links img {
     height: 30px;
     width: 30px; }
 
-.timeline {
+.about {
   position: absolute;
   top: 200px;
+  width: 100%; }
+
+.bio {
+  font-family: "Futura", sans-serif;
+  margin-left: 20px;
+  width: 80%;
+  text-align: left;
+  color: #8EDCE6; }
+
+.nav {
+  padding: 20px; }
+  .nav .nav-item {
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Futura", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #8EDCE6;
+    padding: 10px;
+    letter-spacing: 0.89px;
+    background: transparent; }
+    .nav .nav-item.selected {
+      border-bottom: 3px solid #8EDCE6; }
+
+.timeline {
   width: 100%; }
   .timeline::before {
     content: '';
@@ -54,26 +97,24 @@ body {
         visibility: inherit; }
     .timeline .timeline-block .timeline-text {
       display: block; }
-      .timeline .timeline-block .timeline-text.hidden {
-        visibility: hidden; }
-      .timeline .timeline-block .timeline-text.slide-left {
-        animation-name: slideLeft;
-        -webkit-animation-name: slideLeft;
+      .timeline .timeline-block .timeline-text.slide {
+        animation-name: slideUp;
+        -webkit-animation-name: slideUp;
         animation-duration: 1s;
         -webkit-animation-duration: 1s;
         animation-timing-function: ease;
         -webkit-animation-timing-function: ease;
         visibility: visible !important; }
 
-@keyframes slideLeft {
+@keyframes slideUp {
   0% {
-    transform: translateX(150%); }
+    transform: translateY(150%); }
   100% {
-    transform: translateX(0%); } }
+    transform: translateY(0%); } }
 @-webkit-keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(150%); }
+    -webkit-transform: translateY(150%); }
   100% {
-    -webkit-transform: translateX(0%); } }
+    -webkit-transform: translateY(0%); } }
 
 /*# sourceMappingURL=application.css.map */
