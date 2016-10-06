@@ -76,6 +76,13 @@ body {
       border-bottom: 3px solid $myBlue;
     }
   }
+  @media screen and (max-width: 500px) {
+    padding: 10px;
+    .nav-item {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }
 }
 .timeline {
   width: 100%;

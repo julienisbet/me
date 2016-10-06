@@ -63,6 +63,12 @@ a {
     background: transparent; }
     .nav .nav-item.selected {
       border-bottom: 3px solid #8EDCE6; }
+  @media screen and (max-width: 500px) {
+    .nav {
+      padding: 10px; }
+      .nav .nav-item {
+        padding: 5px;
+        font-size: 12px; } }
 
 .timeline {
   width: 100%; }
