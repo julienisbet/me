@@ -18,14 +18,62 @@ body {
   .headline #links img {
     height: 30px;
     width: 30px; }
-  .headline .resume-link {
-    font-size: 20px;
-    background-color: #2B2D42;
-    padding: 5px; }
-    .headline .resume-link a {
-      text-decoration: none; }
 
-.main p {
-  margin: 5px; }
+.timeline {
+  position: absolute;
+  top: 200px;
+  width: 100%; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 2px);
+    height: 100%;
+    width: 4px;
+    background: #8EDCE6; }
+  .timeline .timeline-block {
+    font-family: "Futura", sans-serif;
+    color: #8EDCE6;
+    font-size: 14px;
+    width: 50%;
+    text-align: right;
+    /*animations*/ }
+    .timeline .timeline-block:nth-child(even) {
+      margin-left: 50%;
+      text-align: left; }
+    .timeline .timeline-block .timeline-content {
+      padding: 20px; }
+      .timeline .timeline-block .timeline-content::before {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+        background-color: #8EDCE6;
+        left: calc(50% - 8px);
+        visibility: inherit; }
+    .timeline .timeline-block .timeline-text {
+      display: block; }
+      .timeline .timeline-block .timeline-text.hidden {
+        visibility: hidden; }
+      .timeline .timeline-block .timeline-text.slide-left {
+        animation-name: slideLeft;
+        -webkit-animation-name: slideLeft;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        visibility: visible !important; }
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%); }
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(150%); }
+  100% {
+    -webkit-transform: translateX(0%); } }
 
 /*# sourceMappingURL=application.css.map */
