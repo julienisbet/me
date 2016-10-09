@@ -1,24 +1,25 @@
 $(document).ready(function(){
+    console.log("yo")
     $(this).scrollTop(0);
     var timelineBlocks = $('.timeline-block'),
         offset = 0.8;
 
     $('#nav-link-bio').on("click", function(){
-        $('.timeline').addClass("hidden");
+        $('.timeline').addClass("hide");
         $('.bio').removeClass("hide");
         $(this).addClass("selected");
         $('#nav-link-timeline').removeClass("selected");
     })
     $('#nav-link-timeline').on("click", function(){
         $('.bio').addClass("hide");
-        $('.timeline').removeClass("hidden")
+        $('.timeline').removeClass("hide")
+        //hide timeline blocks which are outside the viewport
+        hideBlocks(timelineBlocks, offset);
         $(this).addClass("selected");
         $('#nav-link-bio').removeClass("selected");
     })
 
 
-    //hide timeline blocks which are outside the viewport
-    hideBlocks(timelineBlocks, offset);
 
     //on scolling, show/animate timeline blocks when enter the viewport
     $(window).on('scroll', function(){
@@ -31,7 +32,7 @@ $(document).ready(function(){
 
     function hideBlocks(blocks, offset) {
         blocks.each(function(){
-            ( $(this).offset().top > $(window).scrollTop() + 200 + $(window).height()*offset ) && $(this).find('.timeline-text').addClass('hidden');
+            ( $(this).offset().top > $(window).scrollTop() + 200 + $(window).height()*offset ) && $(this).find('.timeline-text').removeClass('slide').addClass('hidden');
         });
     }
 
